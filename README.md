@@ -13,55 +13,61 @@ Welcome to this hands-on tutorial for learning Git and GitHub! This repository i
 
 ### Installing Git
 1. **Windows**: Download and install Git from [git-scm.com](https://git-scm.com/)
-2. **macOS**: Install using Homebrew: `brew install git`
-3. **Linux**: Install using package manager: `sudo apt-get install git` (Ubuntu/Debian)
+2. **macOS**: Install using Homebrew: `$ brew install git`
+3. **Linux**: Install using package manager: `$ sudo apt-get install git` (Ubuntu/Debian)
 
 ### Configuring Git
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your.email@example.com"
 ```
 
 ## Basic Git Commands
 
 ### Creating and Managing Repositories
+0. **Make a directory**
+   ```bash
+   $ mkdir git-lesson
+   $ cd git-lesson
+   ```
+
 1. **Initialize a new repository**
    ```bash
-   git init
+   $ git init
    ```
 
 2. **Check repository status**
    ```bash
-   git status
+   $ git status
    ```
 
 3. **Stage changes**
    ```bash
-   git add filename    # Stage specific file
-   git add .          # Stage all changes
+   $ git add filename    # Stage specific file
+   $ git add .          # Stage all changes
    ```
 
 4. **Commit changes**
    ```bash
-   git commit -m "Your commit message"
+   $ git commit -m "Your commit message"
    ```
 
 ### Working with Branches
 1. **Create a new branch**
    ```bash
-   git branch branch-name
+   $ git branch branch-name
    ```
 
 2. **Switch to a branch**
    ```bash
-   git checkout branch-name
-   # or use the newer command
-   git switch branch-name
+   $ git checkout branch-name
+   $ # or use the newer command
+   $ git switch branch-name
    ```
 
 3. **Create and switch to a new branch**
    ```bash
-   git checkout -b new-branch-name
+   $ git checkout -b new-branch-name
    ```
 
 ## Working with GitHub
@@ -70,28 +76,28 @@ git config --global user.email "your.email@example.com"
 1. Create a GitHub account at [github.com](https://github.com)
 2. Set up SSH keys for secure communication with GitHub
    ```bash
-   ssh-keygen -t ed25519 -C "your.email@example.com"
+   $ ssh-keygen -t ed25519 -C "your.email@example.com"
    ```
 
 ### Basic GitHub Operations
 1. **Clone a repository**
    ```bash
-   git clone repository-url
+   $ git clone repository-url
    ```
 
 2. **Add a remote repository**
    ```bash
-   git remote add origin repository-url
+   $ git remote add origin repository-url
    ```
 
 3. **Push changes**
    ```bash
-   git push origin branch-name
+   $ git push origin branch-name
    ```
 
 4. **Pull changes**
    ```bash
-   git pull origin branch-name
+   $ git pull origin branch-name
    ```
 
 ## Practical Exercises
@@ -120,17 +126,17 @@ When Git can't automatically merge changes, you'll need to resolve conflicts man
 ### Undoing Changes
 1. **Discard unstaged changes**
    ```bash
-   git restore filename
+   $ git restore filename
    ```
 
 2. **Unstage changes**
    ```bash
-   git restore --staged filename
+   $ git restore --staged filename
    ```
 
 3. **Undo last commit**
    ```bash
-   git reset HEAD~1
+   $ git reset HEAD~1
    ```
 
 Remember: The best way to learn Git is by practicing. Don't be afraid to experiment in a test repository!
