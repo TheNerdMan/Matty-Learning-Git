@@ -44,7 +44,9 @@ $ git config --global user.email "your.email@example.com"
 3. **Stage changes**
    ```bash
    $ git add filename    # Stage specific file
+   # or
    $ git add .          # Stage all changes
+   # You can't do both here
    ```
 
 4. **Commit changes**
